@@ -1,5 +1,3 @@
- 
-LINK :https://backend-lab-0l7m.onrender.com/
 # Lab 1: Node.js and Express Server
 
 > **Deployment Status:** Not deployed yet  
