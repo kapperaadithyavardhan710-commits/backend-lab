@@ -1,0 +1,31 @@
+{
+  "name": "lab-report-2",
+  "version": "1.0.0",
+  "description": "Lab 2: SQLite Database and CRUD Operations Using Node.js and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "node test-api.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sqlite",
+    "sqlite3",
+    "crud",
+    "rest-api"
+  ],
+  "author": "Abithya",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
+

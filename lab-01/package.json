@@ -1,0 +1,23 @@
+{
+  "name": "lab-01",
+  "version": "1.0.0",
+  "description": "Lab 1: Node.js and Express Server - Backend Development Fundamentals",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start:express": "node app.js",
+    "start:http": "node http-server.js",
+    "test": "node test-servers.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "http-server",
+    "backend-fundamentals"
+  ],
+  "author": "KAPPERA ADITHYA VARDHAN",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
