@@ -2,7 +2,7 @@
 
 LINK: https://backend-lab-0l7m.onrender.com/
 
-Welcome to the **Backend Development Fundamentals** laboratory repository. This repository organizes both **Lab 1** and **Lab 2** assignments into independent, modular project folders.
+Welcome to the **Backend Development Fundamentals** laboratory repository. This repository organizes **Lab 1**, **Lab 2**, and **Lab 3** assignments into independent, modular project folders.
 
 ---
 
@@ -53,6 +53,30 @@ backend-lab/
 │       ├── delete-book.png
 │       └── database-verification.png
 │
+├── lab-03/                               # Lab 3: REST API, Query Parameters, Validation & Debugging
+│   ├── app.js                           # Express server with query filtering, sorting, pagination & validators
+│   ├── database.js                      # Parameterized SQLite query methods & auto-seed
+│   ├── initDB.sql                       # Database schema and 12-record seed queries
+│   ├── package.json                     # Node project manifest
+│   ├── package-lock.json                # Dependency lockfile
+│   ├── render.yaml                      # Render Infrastructure-as-Code deployment config
+│   ├── .gitignore                       # Local ignore rules
+│   ├── README.md                        # Complete Lab 3 documentation & report
+│   └── screenshots/                     # 11 Postman screenshots + DB Browser captures
+│       ├── get-all-books.png
+│       ├── search-query-java.png
+│       ├── sort-by-price-desc.png
+│       ├── filter-by-price-range.png
+│       ├── pagination-limit-3-offset-0.png
+│       ├── invalid-query-param.png
+│       ├── post-missing-title.png
+│       ├── post-invalid-price.png
+│       ├── get-book-not-found.png
+│       ├── post-create-book.png
+│       ├── delete-book.png
+│       └── db-browser/
+│           └── browse-data.png
+│
 ├── .gitignore                            # Root repository ignore rules
 └── README.md                             # Main repository documentation
 ```
@@ -87,6 +111,18 @@ backend-lab/
 
 ---
 
+### 📖 [Lab 3: REST API, Query Parameters, Validation & Debugging](./lab-03/)
+- **Directory:** [`./lab-03/`](./lab-03/)
+- **Core Focus:** Advanced RESTful query parameters (partial text search, column sorting, price range filtering, limit/offset pagination), strict request body/param validation, defensive error handling, and SQLite integration.
+- **Key Features:**
+  - Dynamic composable query filtering (`search_q`, `order_by`, `order`, `min_price`, `max_price`, `limit`, `offset`)
+  - Whitelist-guarded SQL sorting and parameterized queries (`?`) preventing SQL injection
+  - Informative HTTP status code semantics (`200 OK`, `201 Created`, `400 Bad Request`, `404 Not Found`, `500 Internal Server Error`)
+  - DB Browser for SQLite verification and 11 Postman evidence captures
+- **Documentation:** See [`./lab-03/README.md`](./lab-03/README.md) for full endpoint specifications, validation payload catalog, and verification screenshots.
+
+---
+
 ## Quick Start & Installation
 
 ### Running Lab 1
@@ -104,4 +140,12 @@ npm install
 npm start
 # or npm run dev
 # or npm test
+```
+
+### Running Lab 3
+```bash
+cd lab-03
+npm install
+npm start
+# or npm run dev
 ```
